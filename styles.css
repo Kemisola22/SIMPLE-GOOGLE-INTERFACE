@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+}
+
+.header, .footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #e8e8e8;
+}
+
+.header a, .footer a {
+    color: #5f6368;
+    text-decoration: none;
+    margin-right: 15px;
+    font-size: 14px;
+}
+
+.header-right, .footer-right {
+    display: flex;
+    align-items: center;
+}
+
+.sign-in {
+    background-color: #1a73e8;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.main {
+    top: 30%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-grow: 1;
+    text-align: center;
+}
+
+.logo {
+    width: 272px;
+    height: 92px;
+    margin-bottom: 20px;
+}
+
+.search-container {
+    width: 60%;
+    max-width: 584px;
+}
+
+.search-bar-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.search-bar {
+    width: 100%;
+    padding: 10px 40px 10px 20px; /* Add right padding for the icon */
+    font-size: 16px;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    box-shadow: none;
+    outline: none;
+    margin-bottom: 20px;
+}
+
+.search-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    transform: translateY(-80%);
+    width: 20px;
+    height: 20px;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Magnifying_glass_icon.svg/1200px-Magnifying_glass_icon.svg.png'); /* Example icon URL */
+    background-size: contain;
+    background-repeat: no-repeat;
+    pointer-events: none; /* Prevent the icon from blocking input field clicks */
+}
+
+.search-buttons {
+    display: flex;
+    justify-content: center;
+}
+
+.search-button {
+    background-color: #f8f9fa;
+    border: 1px solid #f8f9fa;
+    color: #3c4043;
+    padding: 10px 20px;
+    border-radius: 4px;
+    margin: 0 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.search-button:hover {
+    border: 1px solid #dadce0;
+}
+
+.footer {
+    border-top: 1px solid #e8e8e8;
+}
